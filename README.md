@@ -10,3 +10,5 @@ Sabrina Miyasaki
 
 # Ideia do projeto
 Construir uma plataforma de e-commerce para a compra de crochetaria de uma artesã idependente. Para isso, listaremos o catálogo...
+
+Link Figma: https://www.figma.com/design/OvY61hpPb7LuyCo9ybfxcY/Mobile-and-Web-Interaction--Community-?node-id=4-0&t=dv1LzjVfYkdLwztD-1
