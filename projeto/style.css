@@ -11,7 +11,7 @@ body{
     align-items: center;
 }
 
-/* Cabecalho */
+/* --- Cabecalho */
 nav {
     display: flex;
     justify-content: center;
@@ -21,64 +21,128 @@ nav > ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    border: 1px solid green;
     width: 500px;
 }
 
 nav > ul > li {
     padding: 10px;
+    font-size: 20px;
+    margin: 0px 10px;
+    color: #515151;
+    transition: 0.2s;
 }
 
+nav > ul > li:hover {
+    background-color: #f073b1;
+    border-radius: 10px;
+    color: rgb(119, 0, 255);
+}
 
-/*Corpo de site*/
+section#banner {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 600px;
+    margin-bottom: 20px;
+}
+
+section#banner > h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+section#banner > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- Corpo de site*/
 main{
-    border: 1px solid green;
     margin: 10px;
     width: 95%;
 }
 
-/*Produtos */
+/* --- Produtos */
 section#produtos {
-    display: flex;
-    justify-content: space-between;
+    height: 600px;
     margin-bottom: 20px;
 }
 
-section#produtos > div{
-    background-color: rgb(103, 190, 122);
-    width: 400px;
-    height: 400px;
+section#produtos > h1 {
+    margin-left: 10px;
+    text-align: left;
+    font-size: 2.5em;
+    color: #515151;
+}
+
+section#produtos > div#fotos {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+section#produtos > div#fotos > div{
+    background-color: rgb(233, 193, 243);
+    width: 25%;
+    height: 80%;
     margin: 0px 10px 0px 10px;
     border-radius: 10px;
 }
 
-/*Seções extras */
+/* --- Seções extras */
 section#destaque{
+    height: 600px;
+    margin-bottom: 20px;
+}
+
+section#destaque> h1 {
+    margin-left: 10px;
+    text-align: left;
+    font-size: 2.5em;
+    color: #515151;
+}
+
+section#destaque > div#fotos{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-bottom: 10px;
 }
 
-section#destaque >  div{
-    border:1px solid red;
-    background-color: aqua;
-    margin: 0px 10px 0px 10px;
+section#destaque > div#fotos > div{
+    background-color: rgb(103, 248, 248);
     width: 500px;
     height: 500px;
     border-radius: 10px;
 }
 
-/*Seções comentarios */
+/* --- Seções comentarios */
+
 section#comentarios {
-    display: flex;
-    justify-content: center;
+    height: 400px;
+    margin-bottom: 20px;
 }
 
-section#comentarios > div {
-    height: 200px;
-    width: 300px;
-    background-color: red;
+section#comentarios > h1 {
+    margin-left: 10px;
+    text-align: left;
+    font-size: 2.5em;
+    color: #515151;
 }
+
+section#comentarios > div#bloco{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+section#comentarios > div#bloco > div {
+    height: 200px;
+    width: 500px;
+    background-color: rgb(243, 231, 199);
+}
+
 footer{
     text-align: center;
     color: white;
