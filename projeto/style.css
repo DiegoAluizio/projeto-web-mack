@@ -205,6 +205,7 @@ footer{
     
     /* ----- Destaque */
     section#destaque{
+        display: none;
         height: max-content;
     }
 
