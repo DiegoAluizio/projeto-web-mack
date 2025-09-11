@@ -113,7 +113,7 @@ section#produtos > div#carrosel_produtos > div{
 
 /* --- Seções extras */
 section#destaque{
-    height: 700px;
+    height: max-content;
     margin-bottom: 20px;
 }
 
@@ -126,6 +126,7 @@ section#destaque> h1 {
 
 section#destaque > div#carrosel_destaque{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 10px;
 }
@@ -138,6 +139,12 @@ section#destaque > div#carrosel_destaque > div.card_destaque{
     width: 600px;
     height: 600px;
     border-radius: 10px;
+}
+
+section#destaque > div#carrosel_destaque > div.card_destaque > img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
 }
 
 /* --- Seções comentarios */
@@ -179,17 +186,19 @@ footer{
     /* ----- Banner */
     section#banner {
         height: max-content;
-        flex-direction: column  ;
+        flex-direction: column ;
+    }
+
+    section#banner > img{
+        height: 400px;
+        flex: 400px;
+        object-fit: cover;
     }
 
     section#banner > h1{
         font-size: 2em;
     }
 
-    section#banner > img {
-        width: 100%;
-        object-fit: cover;
-    }
     
     section#produtos  > div#carrosel_produtos{
         flex-wrap: wrap;
@@ -201,23 +210,24 @@ footer{
         height: 300px;
         font-size: 10px;
     }
-
     
     /* ----- Destaque */
     section#destaque{
-        display: none;
         height: max-content;
     }
 
     section#destaque > div#carrosel_destaque > div.card_destaque{
         width: 200px;
-        height: 200px;
+        height: 300px;
     }
 
     section#destaque > div#carrosel_destaque > div.card_destaque > h2{
         font-size: 1em;
     }
 
+    section#carrossel_comentarios{
+
+    }
     
 }
 
