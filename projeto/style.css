@@ -80,7 +80,7 @@ section#produtos > h1 {
     color: #515151;
 }
 
-section#produtos > div#carrosel_produtos {
+section#produtos > div#carrossel_produtos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -88,7 +88,7 @@ section#produtos > div#carrosel_produtos {
     width: 100%;
 }
 
-section#produtos > div#carrosel_produtos > div{
+section#produtos > div#carrossel_produtos > div{
     background-color: #F28585;
     width: 400px;
     height: 450px;
@@ -124,14 +124,14 @@ section#destaque> h1 {
     color: #515151;
 }
 
-section#destaque > div#carrosel_destaque{
+section#destaque > div#carrossel_destaque{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 10px;
 }
 
-section#destaque > div#carrosel_destaque > div.card_destaque{
+section#destaque > div#carrossel_destaque > div.card_destaque{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -141,7 +141,7 @@ section#destaque > div#carrosel_destaque > div.card_destaque{
     border-radius: 10px;
 }
 
-section#destaque > div#carrosel_destaque > div.card_destaque > img{
+section#destaque > div#carrossel_destaque > div.card_destaque > img{
     width: 100%;
     height: 80%;
     object-fit: cover;
@@ -160,17 +160,39 @@ section#comentarios > h1 {
     color: #515151;
 }
 
-section#comentarios > div#bloco{
+section#comentarios > div#carrossel_comentarios{
     display: flex;
     justify-content: space-evenly;
 
 }
 
-section#comentarios > div#bloco > div {
+section#comentarios > div#carrossel_comentarios > div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
     height: 200px;
-    width: 500px;
-    background-color: #F2E8DF;
+    width: 450px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 3px 2px 20px -15px rgba(0,0,0,0.75);
 }
+
+section#comentarios > div#carrossel_comentarios > div  > h2{
+    color: #F2B263;
+    margin-left: 20px;
+}
+
+section#comentarios > div#carrossel_comentarios > div  > p{
+    text-align: center;
+}
+
+section#comentarios > div#carrossel_comentarios > div  > h3{
+    color: #515151;
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+
 
 footer{
     text-align: center;
@@ -200,12 +222,12 @@ footer{
     }
 
     
-    section#produtos  > div#carrosel_produtos{
+    section#produtos  > div#carrossel_produtos{
         flex-wrap: wrap;
         flex: 2;
     }
 
-    section#produtos > div#carrosel_produtos > div.card_produto{
+    section#produtos > div#carrossel_produtos > div.card_produto{
         width: 300px;
         height: 300px;
         font-size: 10px;
@@ -216,18 +238,15 @@ footer{
         height: max-content;
     }
 
-    section#destaque > div#carrosel_destaque > div.card_destaque{
+    section#destaque > div#carrossel_destaque > div.card_destaque{
         width: 200px;
         height: 300px;
     }
 
-    section#destaque > div#carrosel_destaque > div.card_destaque > h2{
+    section#destaque > div#carrossel_destaque > div.card_destaque > h2{
         font-size: 1em;
     }
 
-    section#carrossel_comentarios{
-
-    }
     
 }
 
