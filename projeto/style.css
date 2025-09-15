@@ -221,15 +221,10 @@ footer{
     }
 
     
-    section#produtos  > div#carrossel_produtos{
-        flex-wrap: wrap;
-        flex: 2;
-    }
-
     section#produtos > div#carrossel_produtos > div.card_produto{
-        width: 300px;
-        height: 300px;
-        font-size: 10px;
+        width: 350px;
+        height: 350px;
+        font-size: 12px;
     }
     
     /* ----- Destaque */

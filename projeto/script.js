@@ -29,6 +29,8 @@ for(let i = 0; i < 4; i++){
     carrossel_produto.append(card_produto)
 }
 
+// - Animacao: Destaque -> https://www.youtube.com/shorts/0dXyetSW-Ro
+
 // ---- Criacão dos componentes de Destaque
 const carrossel_destaque = document.querySelector("#carrossel_destaque")
 for(let i = 0;i < 2; i++){
