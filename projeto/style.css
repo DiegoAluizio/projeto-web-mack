@@ -90,8 +90,8 @@ section#produtos > div#carrossel_produtos {
 
 section#produtos > div#carrossel_produtos > div{
     background-color: #F28585;
-    width: 400px;
-    height: 450px;
+    width: 300px;
+    height: 340px;
     margin: 10px 10px 0px 10px;
     border-radius: 10px;
 }
@@ -163,7 +163,6 @@ section#comentarios > h1 {
 section#comentarios > div#carrossel_comentarios{
     display: flex;
     justify-content: space-evenly;
-
 }
 
 section#comentarios > div#carrossel_comentarios > div {
@@ -245,6 +244,10 @@ footer{
 
     section#destaque > div#carrossel_destaque > div.card_destaque > h2{
         font-size: 1em;
+    }
+
+    section#comentarios > div#carrossel_comentarios > *:not(:first-child){
+        display: none;
     }
 
     
