@@ -46,7 +46,7 @@ for(let i = 0;i < 2; i++){
 }
 
 
-// ---- Criacão dos componentes de Comentarios
+// ----- Criacão dos componentes de Comentarios
 const carrossel_comentario = document.querySelector("#carrossel_comentarios")
 for(let i = 0;i < 3; i++){
     const card_comentario = document.createElement('div')
@@ -59,21 +59,18 @@ for(let i = 0;i < 3; i++){
     carrossel_comentario.append(card_comentario)
 }
 
+// ----- Animação
+//Pegando todos os elementos que eu quero animar
+const elementos = document.querySelectorAll('.invisivel');
 
+const observador = new IntersectionObserver((entrada) => {
+    entrada.forEach(entrada => {
+        if(entrada.isIntersecting){
+            entrada.target.classList.add('visivel')
+        }else{
+            entrada.target.classList.remove('visivel')
+        }
+    })
+})
 
-// //Object.keys(Obbjec).values()
-// console.log(Object.keys(pessoa))
-// console.log(Object.values(pessoa))
-
-// //JSON - 
-// {
-//     "nome": "Lucas",
-//     "idade" : 30,
-//     "habilidades": ["JavaScript","React","Node"]  
-// }
-// //DO objeto para Json
-// let jsonDados = JSON.stringify(dados);
-
-// //Do json para Objeto
-// let objeto = JSON.parse(textoJson)
-// console.log(jsonDados);
+elementos.forEach(e => observador.observe(e));
