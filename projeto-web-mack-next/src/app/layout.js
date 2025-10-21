@@ -1,6 +1,8 @@
+import "./globals.css"; // <---- IMPORTANTE
+
 export const metadata = {
   title: "Lih's Crochet",
-  description: "Loja de crochê feita com Next.js",
+  description: "Transforme seu personagem favorito em crochê!",
 };
 
 export default function RootLayout({ children }) {

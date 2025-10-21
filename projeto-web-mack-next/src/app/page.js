@@ -13,21 +13,19 @@ export default function Home() {
 
       <section id="banner">
         <section id="texto">
-          <h1>
-            TRANSFORME O SEU PERSONAGEM FAVORITO EM
-            <h2>
-              <span>C</span>
-              <span>R</span>
-              <span>O</span>
-              <span>C</span>
-              <span>H</span>
-              <span>E</span>
-              <span>T</span>
-              <span>!</span>
-              <span>!</span>
-              <span>!</span>
-            </h2>
-          </h1>
+          <h1>TRANSFORME O SEU PERSONAGEM FAVORITO EM</h1>
+          <h2 className="titulo-croche">
+            <span>C</span>
+            <span>R</span>
+            <span>O</span>
+            <span>C</span>
+            <span>H</span>
+            <span>E</span>
+            <span>T</span>
+            <span>!</span>
+            <span>!</span>
+            <span>!</span>
+          </h2>
         </section>
 
         <div id="img-holder">
@@ -51,7 +49,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <p>Projeto em fase de desenvolvimento @Lih's Crochet</p>
+        <p>Projeto em fase de desenvolvimento @Lih&apos;s Crochet</p>
       </footer>
     </main>
   );
