@@ -1,0 +1,350 @@
+@keyframes animacao_aparecer{
+    from {
+        opacity: 0;
+        /* scale: 0.5; */
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        /* scale: 1; */
+        transform: translateX(0px);
+    }
+}
+
+/* ----- Animações */
+.invisivel{
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: 0.8s ease;
+}
+
+.visivel {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@keyframes bounce{
+    100%{
+        top: -20px;
+        text-shadow: 0 1px 0 #ccc,0 2px 0 #ccc,0 3px 0 #ccc,0 4px 0 #ccc,
+        0 5px 0 #ccc,0 6px 0 #ccc,0 7px 0 #ccc,0 60px 30px rgba(0,0,0,0.3)
+    }
+}
+
+
+html,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- Cabecalho */
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 500px;
+}
+
+nav > ul > li {
+    padding: 5px 15px 5px 15px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px 10px;
+    color: #515151;
+    transition: 0.3s;
+}
+
+nav > ul > li:hover {
+    background-color:  #F28585;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* --- Corpo de site*/
+main{
+        /* animation: animacao_aparecer linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%; */
+    /* animation: animacao_aparecer 1s ease forwards; */
+    margin: 10px;
+    width: 95%;
+}
+
+section#banner {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 700px;
+    margin-bottom: 20px;
+}
+
+section#banner > section#texto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section#banner > section#texto > h1 {
+    color: #515151;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+section#banner > section#texto > h2 {
+    text-align: center;
+    font-size: 40px;
+}
+span{
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    font-size: 5rem;
+    animation: bounce 0.4s ease infinite alternate;
+    color: rgb(252, 153, 255); 
+}
+
+span:nth-child(2){
+   animation-delay: 0.1s;
+}
+span:nth-child(3){
+   animation-delay: 0.2s;
+}
+span:nth-child(4){
+   animation-delay: 0.3s;
+}
+span:nth-child(5){
+   animation-delay: 0.4s;
+}
+span:nth-child(6){
+   animation-delay: 0.5s;
+}
+span:nth-child(7){
+   animation-delay: 0.6s;
+}
+span:nth-child(8){
+   animation-delay: 0.7s;
+}
+span:nth-child(9){
+   animation-delay: 0.8s;
+}
+
+
+
+section#banner > div#img-holder{
+    width: 1000px;
+    height: 100%;
+}
+
+section#banner > div#img-holder >img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- Produtos */
+section#produtos {
+
+    height: max-content;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+section#produtos > h1 {
+    margin-left: 10px;
+    text-align: left;
+    font-size: 2.5em;
+    color: #515151;
+}
+
+section#produtos > div#carrossel_produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+}
+
+
+section#produtos > div#carrossel_produtos > div{
+    background-color: #F28585;
+    width: 300px;
+    height: 340px;
+    margin: 10px 10px 0px 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+section#produtos > div#carrossel_produtos > div:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.card_produto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card_produto > h2{
+    font-weight: 500;
+}
+
+.card_produto > img{
+    width: 100%;
+    object-fit: contain;
+}
+
+/* --- Seções extras */
+section#destaque{
+    height: max-content;
+    margin-bottom: 20px;
+}
+
+section#destaque> h1 {
+    margin-left: 10px;
+    text-align: left;
+    font-size: 2.5em;
+    color: #515151;
+}
+
+section#destaque > div#carrossel_destaque{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+section#destaque > div#carrossel_destaque > div.card_destaque{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #F2B263;
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+section#destaque > div#carrossel_destaque > div.card_destaque > img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+/* --- Seções comentarios */
+section#comentarios {
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+section#comentarios > h1 {
+    margin-left: 10px;
+    text-align: left;
+    font-size: 2.5em;
+    color: #515151;
+}
+
+section#comentarios > div#carrossel_comentarios{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section#comentarios > div#carrossel_comentarios > div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 200px;
+    width: 450px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 3px 2px 20px -15px rgba(0,0,0,0.75);
+}
+
+section#comentarios > div#carrossel_comentarios > div  > h2{
+    color: #F2B263;
+    margin-left: 20px;
+}
+
+section#comentarios > div#carrossel_comentarios > div  > p{
+    text-align: center;
+}
+
+section#comentarios > div#carrossel_comentarios > div  > h3{
+    color: #515151;
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+
+
+footer{
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(85, 85, 85);
+}
+
+
+/* --------------- Responsividade Mobile*/
+@media (max-width: 768px){
+    /* ----- Banner */
+    section#banner {
+        height: max-content;
+        flex-direction: column ;
+    }
+
+    section#banner > div#img-holder{
+        width: 100%;
+
+    }
+    section#banner > div#img-holder >img {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    section#banner > h1{
+        font-size: 2em;
+    }
+
+    
+    section#produtos > div#carrossel_produtos > div.card_produto{
+        width: 350px;
+        height: 350px;
+        font-size: 12px;
+    }
+    
+    /* ----- Destaque */
+    section#destaque{
+        height: max-content;
+    }
+
+    section#destaque > div#carrossel_destaque > div.card_destaque{
+        width: 200px;
+        height: 300px;
+    }
+
+    section#destaque > div#carrossel_destaque > div.card_destaque > h2{
+        font-size: 1em;
+    }
+
+    section#comentarios > div#carrossel_comentarios > *:not(:first-child){
+        display: none;
+    }
+
+    
+}
