@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import { initVisibilityObserver } from "./components/utils/intersection";
+import { initVisibilityObserver } from "./components/utils/visibilidade";
 
 import CarrosselComentarios from "./components/CarrosselComentarios";
 import CarrosselProdutos from "./components/CarrosselProdutos";
