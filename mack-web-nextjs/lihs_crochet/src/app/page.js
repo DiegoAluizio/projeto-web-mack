@@ -66,7 +66,7 @@ export default function Home() {
         </section>
       </section>
       <footer>
-        <p>Projeto em fase de desenvolvimento @Lih&apos;s Crochet</p>
+        <p>Projeto em fase de desenvolvimento @Lih's Crochet</p>
       </footer>
     </main>
   );
