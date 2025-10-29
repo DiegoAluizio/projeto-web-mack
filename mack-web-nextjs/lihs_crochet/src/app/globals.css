@@ -173,44 +173,6 @@ section#produtos > h1 {
     color: #515151;
 }
 
-section#produtos > div#carrossel_produtos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    height: 100%;
-    width: 100%;
-}
-
-
-section#produtos > div#carrossel_produtos > div{
-    background-color: #F28585;
-    width: 300px;
-    height: 340px;
-    margin: 10px 10px 0px 10px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-section#produtos > div#carrossel_produtos > div:hover{
-    cursor: pointer;
-    transform: scale(1.2);
-}
-
-.card_produto{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.card_produto > h2{
-    font-weight: 500;
-}
-
-.card_produto > img{
-    width: 100%;
-    object-fit: contain;
-}
-
 /* --- Seções extras */
 section#destaque{
     height: max-content;
@@ -224,28 +186,6 @@ section#destaque> h1 {
     color: #515151;
 }
 
-section#destaque > div#carrossel_destaque{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 10px;
-}
-
-section#destaque > div#carrossel_destaque > div.card_destaque{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: #F2B263;
-    width: 600px;
-    height: 600px;
-    border-radius: 10px;
-}
-
-section#destaque > div#carrossel_destaque > div.card_destaque > img{
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-}
 
 /* --- Seções comentarios */
 section#comentarios {
@@ -259,39 +199,6 @@ section#comentarios > h1 {
     font-size: 2.5em;
     color: #515151;
 }
-
-section#comentarios > div#carrossel_comentarios{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-section#comentarios > div#carrossel_comentarios > div {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    height: 200px;
-    width: 450px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 3px 2px 20px -15px rgba(0,0,0,0.75);
-}
-
-section#comentarios > div#carrossel_comentarios > div  > h2{
-    color: #F2B263;
-    margin-left: 20px;
-}
-
-section#comentarios > div#carrossel_comentarios > div  > p{
-    text-align: center;
-}
-
-section#comentarios > div#carrossel_comentarios > div  > h3{
-    color: #515151;
-    margin-left: 20px;
-    font-size: 1em;
-}
-
-
 
 footer{
     text-align: center;

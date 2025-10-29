@@ -1,3 +1,4 @@
+import styles from './CarrosselDestaque.module.css';
 import React from "react";
 
 
@@ -9,9 +10,9 @@ const destaques =
 
 export default function CarrosselDestaque() {
   return (
-      <div id="carrossel_destaque">
+      <div className={styles.carrossel_destaque}>
       {destaques.map((card, index) => (
-        <div key={index} className="card_destaque">
+        <div key={index} className={styles.card_destaque}>
           <img src={card.img} alt={card.alt} />
           <h2>{`${card.titulo} ${index + 1}`}</h2>
           <p>De R${card.valor}</p>

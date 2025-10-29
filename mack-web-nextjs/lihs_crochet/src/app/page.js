@@ -2,9 +2,9 @@
 import { useEffect } from "react";
 import { initVisibilityObserver } from "./components/utils/visibilidade";
 
-import CarrosselComentarios from "./components/CarrosselComentarios";
-import CarrosselProdutos from "./components/CarrosselProdutos";
-import CarrosselDestaque from "./components/CarrosselDestaques";
+import CarrosselComentarios from "./components/Comentarios/CarrosselComentarios";
+import CarrosselProdutos from "./components/Produtos/CarrosselProdutos";
+import CarrosselDestaque from "./components/Destaque/CarrosselDestaques";
 
 
 export default function Home() {

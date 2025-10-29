@@ -1,0 +1,30 @@
+.carrossel_comentarios{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carrossel_comentarios > div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 200px;
+    width: 450px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 3px 2px 20px -15px rgba(0,0,0,0.75);
+}
+
+.carrossel_comentarios > div  > h2{
+    color: #F2B263;
+    margin-left: 20px;
+}
+
+.carrossel_comentarios > div  > p{
+    text-align: center;
+}
+
+.carrossel_comentarios > div  > h3{
+    color: #515151;
+    margin-left: 20px;
+    font-size: 1em;
+}

@@ -1,3 +1,4 @@
+import styles from './CarrosselComentarios.module.css'
 import React from 'react'
 
 const comentarios = [
@@ -8,7 +9,7 @@ const comentarios = [
 
 function CarrosselComentarios(){
  return (
-    <div id="carrossel_comentarios">
+    <div className={styles.carrossel_comentarios}>
       {comentarios.map((comentario, index) => (
         <div key={index}>
           <h2>{`${comentario.titulo} ${index + 1}`}</h2>
