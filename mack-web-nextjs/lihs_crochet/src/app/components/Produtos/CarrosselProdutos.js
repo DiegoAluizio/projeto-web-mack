@@ -6,7 +6,7 @@ import React from "react";
 
 const card = 
     [{id:1, titulo: 'Nojinho', img: 'https://res.cloudinary.com/dx9kqru2y/image/upload/w_400,h_250,c_fill/verde_ctysj4.jpg', alt: 'imagem', valor: 'R$220' },
-     {id:2, titulo: 'Crochet Bonito', img: 'assets/img_placeholder.png', alt: 'imagem', valor: 'R$220' },
+     {id:2, titulo: 'Tux', img: 'https://res.cloudinary.com/dx9kqru2y/image/upload/w_400,h_250,c_fill/linux_lztw7g.jpg', alt: 'imagem', valor: 'R$220' },
      {id:3, titulo: 'Crochet Bonito', img: 'assets/img_placeholder.png', alt: 'imagem', valor: 'R$220' }
     ]
 
