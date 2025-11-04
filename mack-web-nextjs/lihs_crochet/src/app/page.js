@@ -45,7 +45,7 @@ export default function Home() {
           </section>
 
           <div id="img-holder">
-            <img src="/assets/jinx_crochet.jpeg" alt="Jinx de crochê" />
+            <img src="https://res.cloudinary.com/dx9kqru2y/image/upload/v1762217654/jinx_crochet_qzuzo9.jpg" alt="Jinx de crochê" />
           </div>
         </section>
 
