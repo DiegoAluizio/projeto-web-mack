@@ -53,7 +53,9 @@ O uso de estilos modulares ajuda a manter a aparência visual bem estruturada e 
 
 ## Rota dinâmica
   Foi criado uma nova página onde será exibido o produto que foi clicado.
+  
 <img src  ='assets/Captura de tela 2025-11-06 103030.png'>
+
 <img src  ='assets/Captura de tela 2025-11-06 101637.png'>
   
 ## Fetch
