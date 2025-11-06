@@ -39,14 +39,18 @@ Com o Next instalado e o terminal no diretório correto, basta utilizar o comand
 
 ## Passo 4: Parando
 Para parar a execução da aplicação, basta utilizar um ctrl+c no terminal e ele é encerrado.
----
+
 ## Explicação do código
 
 ## Carrossel 
+O componente Carrossel de Produtos foi desenvolvido para exibir uma lista de produtos de forma dinâmica e organizada. Ele utiliza o conceito de componentização, o que permite criar elementos reutilizáveis e facilitar a manutenção do código.
+A principal função desse componente é gerar automaticamente os cards dos produtos a partir de uma lista de dados. Cada card mostra informações como imagem, nome e valor, sem que seja preciso criar tudo manualmente. Além disso, cada produto serve como um link interativo, permitindo que o usuário acesse uma nova página com mais detalhes sobre o item escolhido.
+O uso de estilos modulares ajuda a manter a aparência visual bem estruturada e separada da parte lógica do código. De modo geral, o carrossel combina praticidade, interatividade e organização, representando uma forma moderna e eficiente de exibir informações em uma interface web.
 <img src  ='assets/Screenshot_20250828_084746_Chrome.jpg'>
 
 ## Rota dinâmica
   Foi criado uma nova página onde será exibido o produto que foi clicado.
   <p> colocar imagem com a tag Link</p>
   <p> Tirar um print das pastas</p>
+  
 ## Fetch
