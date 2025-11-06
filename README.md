@@ -39,3 +39,14 @@ Com o Next instalado e o terminal no diretório correto, basta utilizar o comand
 
 ## Passo 4: Parando
 Para parar a execução da aplicação, basta utilizar um ctrl+c no terminal e ele é encerrado.
+---
+## Explicação do código
+
+## Carrossel 
+<img src  ='assets/Screenshot_20250828_084746_Chrome.jpg'>
+
+## Rota dinâmica
+  Foi criado uma nova página onde será exibido o produto que foi clicado.
+  <p> colocar imagem com a tag Link</p>
+  <p> Tirar um print das pastas</p>
+## Fetch
