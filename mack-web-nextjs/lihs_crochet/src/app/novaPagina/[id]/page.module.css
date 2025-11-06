@@ -1,0 +1,12 @@
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:red;
+}
+
+.container > img {
+    width: 50%;
+    height:50%;
+}

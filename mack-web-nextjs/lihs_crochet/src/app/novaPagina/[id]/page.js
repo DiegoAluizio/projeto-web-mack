@@ -1,5 +1,5 @@
 "use client";
-
+import styles from './page.module.css';
 import { useParams, useSearchParams } from "next/navigation";
 
 function NovaPagina(){
@@ -11,10 +11,10 @@ function NovaPagina(){
     const valor = searchParams.get("valor");
 
     return(
-        <main>
-            <p>Produto {titulo}</p>
-            <h1>Colocar o boneco aqui quado clicar</h1>
-            <h1>Oi eu sou a nova pg</h1>
+        <main className = {styles.container}>
+            <h1>Produto {titulo}</h1>
+            <img src = '/assets/img_placeholder.png'/>
+          <h2>Valor {valor}</h2>
         </main>
     )
 
