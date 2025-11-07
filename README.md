@@ -43,7 +43,7 @@ Para parar a execução da aplicação, basta utilizar um ctrl+c no terminal e e
 ## Explicação do código
 
 ## Carrossel 
-O componente Carrossel de Produtos foi desenvolvido para exibir uma lista de produtos de forma dinâmica e organizada. Ele utiliza o conceito de componentização, o que permite criar elementos reutilizáveis e facilitar a manutenção do código.
+O componente Carrossel de Produtos/Comentarios/Destaque foi desenvolvido para exibir uma lista de forma dinâmica e organizada. Ele utiliza o conceito de componentização, o que permite criar elementos reutilizáveis e facilitar a manutenção do código.
 
 A principal função desse componente é gerar automaticamente os cards dos produtos a partir de uma lista de dados. Cada card mostra informações como imagem, nome e valor, sem que seja preciso criar tudo manualmente. Além disso, cada produto serve como um link interativo, permitindo que o usuário acesse uma nova página com mais detalhes sobre o item escolhido.
 
@@ -52,10 +52,11 @@ O uso de estilos modulares ajuda a manter a aparência visual bem estruturada e 
 <img src  ='assets/Captura de tela 2025-11-06 101230.png'>
 
 ## Rota dinâmica
-  Foi criado uma nova página onde será exibido o produto que foi clicado.
+  Foi criado uma nova página onde será exibido o produto que foi clicado,para ficar didático criamo a página nova como o nome de novaPágina xD
   
 <img src  ='assets/Captura de tela 2025-11-06 103030.png'>
 
 <img src  ='assets/Captura de tela 2025-11-06 101637.png'>
-  
+---
 ## Fetch
+ Próxima Entrega
