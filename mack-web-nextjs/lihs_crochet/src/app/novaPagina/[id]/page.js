@@ -9,11 +9,12 @@ function NovaPagina(){
     const id = params.id;
     const titulo = searchParams.get("titulo");
     const valor = searchParams.get("valor");
-
+    const link = searchParams.get("link");
+    console.log(link)
     return(
         <main className = {styles.container}>
             <h1>Produto {titulo}</h1>
-            <img src = '/assets/img_placeholder.png'/>
+            <img src = {link}/>
           <h2>Valor {valor}</h2>
         </main>
     )

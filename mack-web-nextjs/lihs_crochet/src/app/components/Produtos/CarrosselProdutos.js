@@ -1,27 +1,31 @@
 // import NovaPagina from '@/app/novaPagina[id]/page';
+"use client"
 import Link from "next/link";
 import styles from './CarrosselProdutos.module.css';
 import React from "react";
-
-
-const card = 
-    [{id:1, titulo: 'Nojinho', img: 'https://res.cloudinary.com/dx9kqru2y/image/upload/w_400,h_250,c_fill/verde_ctysj4.jpg', alt: 'imagem', valor: 'R$220' },
-     {id:2, titulo: 'Tux', img: 'https://res.cloudinary.com/dx9kqru2y/image/upload/w_400,h_250,c_fill/linux_lztw7g.jpg', alt: 'imagem', valor: 'R$220' },
-     {id:3, titulo: 'Crochet Bonito', img: 'assets/img_placeholder.png', alt: 'imagem', valor: 'R$220' }
-    ]
+import { useEffect, useState } from "react";
+//Fazer Fetch
 
 
 function CarrosselProdutos ( ){
+    const [card, setCard ] = useState([]);
+    
+    useEffect(() => {
+        fetch('http://localhost:8000/produto/')
+            .then((res) => res.json())
+            .then((data) => {
+                setCard(data);
+        });
+    }, []);
+
     return (
         <div className={styles.carrossel_produtos}>
         {
             card.map((produto, index) => (
-
-            
                 <div key={index} className={styles.card_produto}>
-                    <img src={produto.img} ></img>
-                    <Link key={index} href={{ pathname: `/novaPagina/${index}`, query: { titulo: produto.titulo, valor: produto.valor }}} className={styles.link}>
-                        <h2>{`${produto.titulo} ${index + 1}`}</h2>
+                    <img src={produto.link} ></img>
+                    <Link key={index} href={{ pathname: `/novaPagina/${index}`, query: { titulo: produto.titulo, valor: produto.valor, link: produto.link }}} className={styles.link}>
+                        <h2>{`${produto.titulo}`}</h2>
                     </Link>
                     <p>{produto.valor}</p>
                 </div>

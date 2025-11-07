@@ -3,10 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:red;
+
 }
 
 .container > img {
     width: 50%;
     height:50%;
+    box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.5);
 }

@@ -1,11 +1,17 @@
 [
     {
-        "titulo": "crochet1",
+        "titulo": "Nojinho",
         "link": "https://res.cloudinary.com/dx9kqru2y/image/upload/w_400,h_250,c_fill/verde_ctysj4.jpg",
         "valor": 220
     },
     {
-        "titulo": "imagem2",
+        "titulo": "Linux",
+        "link": "https://res.cloudinary.com/dx9kqru2y/image/upload/w_400,h_250,c_fill/linux_lztw7g.jpg",
+        "alt": "imagem linux",
+        "valor": 150
+    },
+      {
+        "titulo": "Linux",
         "link": "https://res.cloudinary.com/dx9kqru2y/image/upload/w_400,h_250,c_fill/linux_lztw7g.jpg",
         "alt": "imagem linux",
         "valor": 150
