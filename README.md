@@ -24,6 +24,7 @@ Haverão outras páginas, uma de pagamento, uma exibindo o produto
 Link Figma: https://www.figma.com/design/OvY61hpPb7LuyCo9ybfxcY/Mobile-and-Web-Interaction--Community-?node-id=4-0&t=dv1LzjVfYkdLwztD-1
 
 # Tutorial
+## to do (entrega final) detalhar como rodar a aplicação após a integração da API
 Após a mudança para o NextJS, a maneira para executar a aplicação utilizando um localhost mudou. Agora, em vez de executar o arquivo index.html, será necessário o uso do terminal para execução de todas as dependências do Next juntamente da aplicação. A fim de facilitar os testes, segue uma explicação de como executar corretamente a versão após a mudança:
 
 ## Passo 1: Estar no diretório correto
