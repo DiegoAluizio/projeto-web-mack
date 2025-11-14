@@ -24,9 +24,25 @@ Haverão outras páginas, uma de pagamento, uma exibindo o produto
 Link Figma: https://www.figma.com/design/OvY61hpPb7LuyCo9ybfxcY/Mobile-and-Web-Interaction--Community-?node-id=4-0&t=dv1LzjVfYkdLwztD-1
 
 # Tutorial
-* To do (entrega final) detalhar como rodar a aplicação após a integração da API
+## API - Python
+Para o projeto criamos uma simples api utilizando FastAPI em python.
 
+Saiba que *não é possível* utiliza-la via codespaces
+Para executa-la clone o o projeto em sua máquina
+Na pasta api 
+- Crie um ambiente virtual Python
+``` Python -m venv venv ```
+- Ative o ambiente virtual
+``` ./venv/Script/Activate ```
+- Instale as dependências ``` pip install "fastapi[standard]" ```
+- Execute a api ``` fastapi run teste.py ```
+
+Feito isso voce pode acessar a documentação com as rotas disponiveis em ``` localhost:8000/docs ```
+A partir daqui podemos inicializar a aplicação NEXT
+
+## NEXT
 Após a mudança para o NextJS, a maneira para executar a aplicação utilizando um localhost mudou. Agora, em vez de executar o arquivo index.html, será necessário o uso do terminal para execução de todas as dependências do Next juntamente da aplicação. A fim de facilitar os testes, segue uma explicação de como executar corretamente a versão após a mudança:
+
 
 ## Passo 1: Estar no diretório correto
 Para correta execução da aplicação, é necessário estar no diretório onde as dependências do NextJS e a aplicação estejam localizados. Para isso, utilize o comando "cd (quaisquer_caminhos_anteriores/)mack-web-nextjs/lihs_crochet/" no terminal.
@@ -34,7 +50,7 @@ Para correta execução da aplicação, é necessário estar no diretório onde 
 * Atenção: a parte "(quaisquer_caminhos_anteriores/)" no comando se trata de uma generalização e vai variar de acordo com a máquina e onde os arquivos estão nela. Caso não esteja conseguindo, verifique o caminho até que ele corresponda ao diretório correto.
 
 ## Passo 2 (Apenas uma vez): Instalar o Next
-Os arquivos necessários para a instalação já estão no projeto. Para realizar a instalação, basta executar o comando "npm install" no diretório descrito no passo anterior. Uma vez instalado, caso deseje executar a aplicação novamente, não será necessário repetir esse passo.
+Os arquivos necessários para a instalação já estão no projeto. Para realizar a instalação, basta executar o comando ``` "npm install" ``` no diretório descrito no passo anterior. Uma vez instalado, caso deseje executar a aplicação novamente, não será necessário repetir esse passo.
 
 ## Passo 3: Rodar!
 Com o Next instalado e o terminal no diretório correto, basta utilizar o comando "npm run dev". Após a execução do comando, uma mensagem solicitando a abertura de um navegador deve aparecer. Abra o navegador e pronto! A aplicação está rodando em sua máquina.
@@ -54,12 +70,19 @@ O uso de estilos modulares ajuda a manter a aparência visual bem estruturada e 
 <img src  ='assets/Captura de tela 2025-11-06 101230.png'>
 
 ## Rota dinâmica
-  Foi criado uma nova página onde será exibido o produto que foi clicado,para ficar didático criamo a página nova como o nome de novaPágina xD
+  Foi criado uma nova página onde será exibido o produto que foi clicado,para ficar didático criamos a página nova com o nome de novaPágina xD
   
 <img src  ='assets/Captura de tela 2025-11-06 103030.png'>
 
 <img src  ='assets/Captura de tela 2025-11-06 101637.png'>
----
-## Fetch
 
-To do: explicar o processo de chamada da API via fetch para a entrega final
+## Fetch
+Depois que a api for colocada em execução teremos acesso ao JSON na porta 8000 do localhost,essa rota funciona com /produto para o carrossel de produtos e com /destaque para o carrossel de destaque
+<br>Os arquivos Json estão disponiveis na pasta api deste repositório. <br>
+<img src = 'assets/fetch_1.png'>
+
+# Considerações finais
+Projeto feito com muita garra e coração <3 ,é simples mas é trabalho honesto ;)
+- Obrigado!
+
+
